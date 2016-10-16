@@ -1,5 +1,7 @@
 package Model.entity;
 
+import net.sf.ehcache.config.PersistenceConfiguration;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -12,6 +14,7 @@ public class Users implements Serializable {
 
     @Id
     @Column(name = "id",columnDefinition = "int")
+//    @SequenceGenerator(PersistenceConfiguration.Strategy=)
     private  long ID;
 
     @Basic
